@@ -4,7 +4,7 @@ JobSite с использованием PostgreSQL
 [![Build Status](https://travis-ci.org/levelp/JobSitePostgreSQL.svg?branch=master)](https://travis-ci.org/levelp/JobSitePostgreSQL)
 [![Coverage Status](https://coveralls.io/repos/github/levelp/JobSitePostgreSQL/badge.svg?branch=master)](https://coveralls.io/github/levelp/JobSitePostgreSQL?branch=master)
 
-Мы используем spring JPA - java persistence API
+В проекте используется Spring JPA (JPA = Java Persistence API)
 который вызывает библиотеку
 Hibernate для генерации и выполнения SQL-запросов
 которая вызывает драйвер PostgreSQL для выполнения
@@ -20,15 +20,15 @@ Hibernate для генерации и выполнения SQL-запросов
 * Password: 123
 
 
-SQL
----
+Основные операторы SQL (Structured Query Language)
+--------------------------------------------------
+* SELECT - выбор записей из таблицы
+* INSERT - добавление новых записей
+* UPDATE - обновление (изменение) записей в таблице
+* DELETE - удаление записей из таблицы
 
-SELECT - выбор записей из таблицы
-```
-
-
-Удаление таблицы
-``` sql
+Удаление таблицы пользователей целиком:
+```sql
 DROP TABLE public.users;
 ```
 
